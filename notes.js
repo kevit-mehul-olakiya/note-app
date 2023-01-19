@@ -13,7 +13,6 @@ const addNote = (title, body) => {
     const duplicatenote = notes.find((note) => note.title === title)
     debugger
 
-
     if (!duplicatenote) {
         notes.push({
             title: title,
@@ -61,7 +60,6 @@ const removeNote = (title) => {
 }
 
 const listNotes = () =>{
-   
   console.log(chalk.yellow.inverse("Your Note!"));
   const notes = loadNotes()
 //   console.log(notes);
